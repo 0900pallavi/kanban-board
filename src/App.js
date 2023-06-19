@@ -4,7 +4,6 @@ import { MyProSidebarProvider } from "./pages/global/sidebar/sidebarContext";
 import Topbar from "./pages/global/Topbar";
 
 import Dashboard from "./pages/dashboard";
-import Team from "./pages/team";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
             </Routes>
           </main>
         </div>

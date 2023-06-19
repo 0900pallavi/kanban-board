@@ -24,7 +24,8 @@ import image4 from './images/image4.png'
 import image5 from './images/image5.png'
 import image6 from './images/image6.png'
 import menu from './images/menu.png'
-
+import round from './images/round.png'
+import Round from './images/Roundimg.png'
 //todo images
 import todoimage1 from './images/todoimage1.png'
 import todoimage2 from './images/todoimage2.png'
@@ -82,6 +83,8 @@ const img = {
     ellipse4,
     plus,
     Union,
-    filter
+    filter,
+    round,
+    Round
 }
 export default img;

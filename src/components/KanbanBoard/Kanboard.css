@@ -1,3 +1,15 @@
+.kanbord_card__ , .kanbord_card__img{
+    justify-content: space-between;
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    flex-flow: wrap;
+    margin-top: 10px;
+}
+.kanbord_card__img img{
+padding:5px;
+
+}
 .innerbox_content, .card_typo, .innerbox_content span{
     display:flex;
     align-items:center;
@@ -11,6 +23,9 @@
 }
 .card_typo{
     justify-content: space-around;
+}
+.user_image, .user_card_img{
+    display: flex;
 }
 .Main-card{
     background-color: #fff;

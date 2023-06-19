@@ -8,18 +8,6 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { Link } from "react-router-dom";
 import { useTheme, Box, Typography, IconButton } from "@mui/material";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import './sidebar.css'
 import img from '../../../assets/img'
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -133,35 +121,35 @@ const MyProSidebar = () => {
             className="sidebar_icon collapse_items">
             <Item className="sidebar_content"
               title="Home"
-              to="/"
+              to=""
               icon="dashboard"
               selected={selected}
               setSelected={setSelected}
             />
             <Item className="sidebar_content"
               title="Messages"
-              to="/contacts"
+              to=""
               icon="message"
               selected={selected}
               setSelected={setSelected}
             />
             <Item className="sidebar_content"
               title="Tasks"
-              to="/contacts"
+              to=""
               icon="task"
               selected={selected}
               setSelected={setSelected}
             />
             <Item className="sidebar_content"
               title="Members"
-              to="/contacts"
+              to=""
               icon="profile"
               selected={selected}
               setSelected={setSelected}
             />
             <Item className="sidebar_content"
               title="Settings"
-              to="/contacts"
+              to=""
               icon="setting"
               selected={selected}
               setSelected={setSelected}
@@ -211,8 +199,14 @@ const MyProSidebar = () => {
           </Box>
           <Box className="sidebar_last_content" style={{ 'background-image': 'url(' + require('../../../assets/images/Union.png') + ')' }}
           >
-            <p></p>
-            {/* <img src={img.Union} /> */}
+            <div>
+            <img src={img.Round}/>
+            </div>
+            <div class="last_content_inner">
+            <h4>Thoughts Time</h4>
+            <p>We don’t have any notice for you, till then you can share your thoughts with your peers.</p> 
+            <input type="text" name="" placeholder="Write a message"/>
+            </div>
           </Box>
         </Menu>
       </Sidebar>

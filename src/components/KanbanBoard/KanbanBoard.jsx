@@ -112,10 +112,10 @@ class KanbanColumn extends React.Component {
         var letters = '0123456789ABCDEF';
         var color = '#';
         for (var i = 0; i < 6; i++) {
-          color += letters[Math.floor(Math.random() * 16)];
+            color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
-      }
+    }
     render() {
         const columnStyle = {
             'display': 'inline-block',
@@ -128,6 +128,7 @@ class KanbanColumn extends React.Component {
             'textAlign': 'center',
             'backgroundColor': '#F5F5F5',
             'padding': '20px',
+            'borderRadius': '16px',
         };
         return (
             <div className="main_card_col"
@@ -135,16 +136,16 @@ class KanbanColumn extends React.Component {
                 onDragEnter={(e) => { this.setState({ mouseIsHovering: true }); this.props.onDragEnter(e, this.props.stage); }}
                 onDragExit={(e) => { this.setState({ mouseIsHovering: false }); }}
             >
-                <div style={{ 'borderBottom': '3px solid ' + this.getRandomColor(), 'paddingBottom':'10px', 'display': 'flex', "alignItems": "Center", "justifyContent": "space-between", }}>
+                <div style={{ 'borderBottom': '3px solid ' + this.getRandomColor(), 'paddingBottom': '10px', 'display': 'flex', "alignItems": "Center", "justifyContent": "space-between", }}>
                     <div className="Heading_name">
-                    <img style={{'paddingRight':'8px'}} src={this.props.img} />
+                        <img style={{ 'paddingRight': '8px' }} src={this.props.img} />
                         {this.props.name}
                         <span className="card_count">
                             {this.props.projects.length}
                         </span></div>
                     {this.props.name.toLowerCase() == 'to do' && <div style={{ 'display': 'flex', "alignItems": "Center", "justifyContent": "space-between" }}>
-                        <img style={{ padding: '5px' }} src={img.addSquare} />
-                        <p style={{ paddingBottom: '7px' }} >...</p>
+                        <img src={img.addSquare} />
+                        <p style={{ marginTop: '-10px' }} >...</p>
                     </div>}
 
                 </div>
@@ -196,50 +197,51 @@ class KanbanCard extends React.Component {
                 </div>
 
                 <div className="card_desc">{this.props.project.description}<br /></div>
-                <div style={{ display: "flex", width: 'auto', justifyContent: 'center' }}>
-                    <img style={{ width: '100%' }} src={this.props.project?.image} />
-                    <img style={{ marginLeft: '10px', width: '100%' }} src={this.props.project?.image1} /></div>
+                <div className="kanbord_card__img">
+                    <div className="user_card_img">
+                    <img src={this.props.project?.image} />
+                    <img style={{ width: '50%' }} src={this.props.project?.image1} />
+                    </div>
+             </div>
                 <div
-                    style={{ 'width': '100%' }}
+                    className="kanbord_card__"
                 >
-                    <Typography className="card_typo" marginTop={'20px'} color="#141414">
-                        <div className="user_image">                            
-                            <img
-                                className="avater-image"
-                                alt="profile user"
-                                width="30px"
-                                height="30px"
-                                src={img.image2}
-                                style={{ cursor: "pointer", borderRadius: "50%" }}
-                            /><img
-                                className="avater-image"
-                                alt="profile user"
-                                width="30px"
-                                height="30px"
-                                src={img.image3}
-                                style={{ cursor: "pointer", borderRadius: "50%" }}
-                            />
-                            <img
-                                className="avater-image"
-                                alt="profile user"
-                                width="30px"
-                                height="30px"
-                                src={img.image4}
-                                style={{ cursor: "pointer", borderRadius: "50%" }}
-                            />
+                    <div className="user_image">
+                        <img
+                            className="avater-image"
+                            alt="profile user"
+                            width="30px"
+                            height="30px"
+                            src={img.image2}
+                            style={{ cursor: "pointer", borderRadius: "50%" }}
+                        /><img
+                            className="avater-image"
+                            alt="profile user"
+                            width="30px"
+                            height="30px"
+                            src={img.image3}
+                            style={{ cursor: "pointer", borderRadius: "50%" }}
+                        />
+                        <img
+                            className="avater-image"
+                            alt="profile user"
+                            width="30px"
+                            height="30px"
+                            src={img.image4}
+                            style={{ cursor: "pointer", borderRadius: "50%" }}
+                        />
 
-                        </div>
-                        <div className="innerbox_content">
-                            <span style={{ 'float': 'right' }}>
-                                <img style={{ 'width': '30px' }} src={img.message} />
-                                comments
-                            </span>
-                            <span style={{ 'float': 'right' }}>
-                                <img src={img.icon6} />
-                                files
-                            </span>
-                        </div>
-                    </Typography>
+                    </div>
+                    <div className="innerbox_content">
+                        <span style={{ 'float': 'right' }}>
+                            <img style={{ 'width': '30px' }} src={img.message} />
+                            comments
+                        </span>
+                        <span style={{ 'float': 'right' }}>
+                            <img src={img.icon6} />
+                            files
+                        </span>
+                    </div>
                 </div>
             </div>
         );
