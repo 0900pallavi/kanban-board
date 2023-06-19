@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@400;700;900&family=Poppins:wght@200;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif !important;
+}
+
+a:hover {
+  color: #0000ff; /* #0ab4ff */
+  font-size: 1.1rem;
+}
+.menu-anchor:hover {
+  font-weight: bolder;
+}
+
+.menu-label {
+  font-size: 13px;
+}
+
+button {
+  right: 20px;
+}
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  opacity: 0.15;
+}
+.menu_item{
+    text-align:left;
+}
+.menu_item .ps-menu-label{
+    display: flex;
+    color: #787486;
+    font-size: 15px;
+}
+.menu_item img, .sidebar_logo img{
+    padding-right:15px;
+}
+.ps-menu-button{
+    height: 40px !important;
+}
+.css-ewdv3l{
+    padding:20px 0 !important;
+}
+/* .sidebar_main {
+    width:230px !important;
+    min-width: 230px !important;
+} */
+.sidebar_icon a, .noncollapse_menu a{
+  padding-left:22px !important;
+}
+.main_heading{
+  font-size: 20px !important;
+    color: #0D062D;
+    font-weight: 600 !important;
+}
+.main_logo{
+  padding-right:10px
+}
+.noncollapse_menu a:first-child{
+ border-bottom:1px solid #DBDBDB;
+ padding: 35px;
+}
+.search_btn{
+  right: 6px;
+}
+.search_box{
+  width:370px;
+  height: 37px;
+}
+.main-right-col{
+  border-bottom:1px solid #DBDBDB;
+  padding:1px 35px;
+  align-items:center;
+}
+.banner_heading{
+  overflow:auto !important;
+}
+/* .sidebar-inner{
+  background: #FFF !important;
+} */
+.right_icons{
+  align-items: center;
+}
+.right_icons .user_info{
+  padding: 8px 0;
+}
+.user_info h5{
+  color: #0D062D;
+  font-size:16px;
+}
+.user_info span{
+  text-align: right;
+  padding-left: 55px;
+  color: #787486;
+  font-size: 14px;
+}
+.collapse_items a p{
+  display:flex;
+  color: #787486;
+  align-items:center;
+  position: relative;
+}
+.project_content{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+}
+.divider{
+  border-bottom: 1px solid #DBDBDB;
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.Main_sidebar_div{
+  border-right:1px solid #DBDBDB !important;
+}
+.task_projects{
+  padding-left: 67px;
+}
+/* .sidebar_last_content{
+  background-image: url(/src/assets/images/Union.png);
+} */
+.filter_section{
+  width: 100%;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+.calender-sec{
+  margin-left:10px;
+}
+.share_div{
+  /* display: flex; */
+  justify-content: end; 
+  align-items:center;
+}
+.share_icon{
+  padding-left:15px;
+}
+.sidebar_last_content{
+  height:250px;
+  background-repeat:no-repeat;
+  background-position: center;
+}

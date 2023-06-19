@@ -1,0 +1,56 @@
+.banner_heading h2{
+    color: #0D062D;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}  
+.dashbord_head{
+    display:flex;
+    align-items:center;
+}
+.dashbord_head h2{
+ padding:15px;
+}
+.dashbord_head img{
+    margin-bottom:20px;
+    padding:5px;
+}
+.right_dashbord_profile{
+    position: relative;
+    width: 240px;
+}
+.right_dashbord_profile img, .right_dashbord_profile  span{
+    position: absolute;
+    top:-12px;
+}
+.right_dashbord_profile img:nth-child(1){
+    z-index: 0;
+    left: 62px;
+}
+.right_dashbord_profile img:nth-child(2){
+    z-index: 1;
+    left: 92px;
+}
+.right_dashbord_profile img:nth-child(3){
+    z-index: 2;
+    left: 123px;
+}
+.right_dashbord_profile img:nth-child(4){
+    z-index: 3;
+    right: 49px;
+}
+.right_dashbord_profile img:nth-child(5){
+    z-index: 4;
+    right: 18px;
+}
+.right_dashbord_profile  span{
+    right: 28px;
+    color: #D25B68;
+    font-size:15px;
+    top:-6px;
+    z-index: 5;
+}
+.right_dashbord_profile h5{
+    color: #5030E5;
+    font-size: 15px;
+}
