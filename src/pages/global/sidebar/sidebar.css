@@ -7,7 +7,7 @@
 }
 
 a:hover {
-  color: #0000ff; /* #0ab4ff */
+  color: #0000ff; 
   font-size: 1.1rem;
 }
 .menu-anchor:hover {
@@ -43,10 +43,7 @@ hr {
 .css-ewdv3l{
     padding:20px 0 !important;
 }
-/* .sidebar_main {
-    width:230px !important;
-    min-width: 230px !important;
-} */
+
 .sidebar_icon a, .noncollapse_menu a{
   padding-left:22px !important;
 }
@@ -77,9 +74,7 @@ hr {
 .banner_heading{
   overflow:auto !important;
 }
-/* .sidebar-inner{
-  background: #FFF !important;
-} */
+
 .right_icons{
   align-items: center;
 }
@@ -120,9 +115,7 @@ hr {
 .task_projects{
   padding-left: 67px;
 }
-/* .sidebar_last_content{
-  background-image: url(/src/assets/images/Union.png);
-} */
+
 .filter_section{
   width: 100%;
   border: 1px solid #DBDBDB;
@@ -133,7 +126,7 @@ hr {
   margin-left:10px;
 }
 .share_div{
-  /* display: flex; */
+  
   justify-content: end; 
   align-items:center;
 }
@@ -179,7 +172,7 @@ border-radius: 4px;
 border:none;
 }
 
-//media query starts from here
+
 @media only screen and (max-width: 1024px) {
   .search_box {
     width: auto !important;

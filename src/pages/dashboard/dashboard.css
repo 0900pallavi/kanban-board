@@ -55,7 +55,7 @@
     font-size: 15px;
 }
 
-//media query starts from here
+
 @media only screen and (max-width: 1024px) {
     .search_box {
       width: auto !important;
